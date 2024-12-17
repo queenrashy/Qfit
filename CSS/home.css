@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    /* position: fixed; */
+    border: 1px solid #333;
+}
+h1{
+    font-size: 30px;
+    color: #333;
+    margin: 15px 0 10px 20px;
+}
+button{
+    height: 3rem;
+    width: 7rem;
+    margin: 10px 20px 10px 0;
+    border-radius: 40px;
+}
+nav .btn1{
+    background-color: #fff;
+    border: none;
+}
+nav .btn1 a{
+    border: 0;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav .btn2{
+    background-color:black;
+    border: none;
+    /* transition: 3s; */
+    
+}
+nav .btn2:hover{
+     background-color: #404040; 
+}
+nav .btn2 a{
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%; 
+        margin: 5px 0;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        height: 2.5rem; /* Slightly smaller buttons */
+    }
+
+    nav {
+        gap: 10px; /* Reduced gap for smaller screens */
+    }
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+ main h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+h1 .h-1{
+    color: #333;
+}
+h1 .h-2{
+    color:  #999999;
+}
+
+.img1 img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30px;
+}
+@media (max-width: 600px) {
+    main {
+        flex-direction: column; /* Stack items vertically on tablets */
+        align-items: center; /* Center items */
+    }
+
+    main h1 {
+        font-size: 50px; /* Adjust font size for tablets */
+        text-align: center; /* Center align heading */
+    }
+
+    .img1 img {
+        width: 80%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin-top: 2rem; /* Adjust margin for phones */
+    }
+
+    main h1 {
+        font-size: 30px; /* Adjust font size for mobile */
+        line-height: 1.2; /* Improve readability */
+    }
+
+    .img1 img {
+        width: 100%; /* Full width images on mobile */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 15px; /* Smaller border radius for mobile */
+    }
+}
+@media  (max-width:768px) {
+    main h1{
+        font-size:30px;
+    }
+}
+section .main2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.main2 button{
+    background: black;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    margin-left: 10px;
+}
+.main2 button:hover{
+    background-color: #999999;
+}
+
+.main2 button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:bold ;
+}
+
+/* Flexbox container for the images and text */
+.img-text-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Styling for individual image containers */
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Styling for images */
+.img-container img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+.img-text-section h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.img-text-section p{
+    color: #333;
+    font-size: 20px;
+}
+.img-text-section span{
+    font-size: larger;
+    cursor: pointer;
+    /* color: #330000; */
+}
+.img-text-section span a{
+    text-decoration: none;
+    color: #e60000;
+}
+.img-text-section  span i{
+    margin-left: 3px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .img-text-section {
+        flex-direction: column;
+    }
+
+    .img-container img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.img2 img{
+    width: 450px;
+    height: 300px;
+}
+
+footer p{
+    margin-top: 50px;
+    color: #e60000;
+    text-align: center;
+}

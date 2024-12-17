@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="/CSS/user_details_form.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <nav>
+        <div>
+          <h1><i class="fa-solid fa-crown"></i>Qfit</h1>
+        </div>
+        <div>
+          <button type="submit" class="btn1">
+            <a href="home.html">Home</a>
+          </button>
+          <button type="submit" class="btn2">
+            <a href="login.html">Sign in</a>
+          </button>
+        </div>
+      </nav>
+    <div class="form-container">
+        <form action="save_details.php" method="post">
+            <!-- <label for="dob">Date of birth:</label> -->
+            <input type="date" name="dob" required placeholder="Date of birth" id="dob">
+            
+            <!-- <label for="age">Age:</label> -->
+            <input type="age" name="age" min="0" placeholder="age">
+            
+            <!-- <label for="gender">Gender:</label> -->
+            <select name="gender" id="" required aria-placeholder="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <button type="submit" class="btn3">Create Account</button>
+        </form>
+    </div>
+    
+</body>
+</html>

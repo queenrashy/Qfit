@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-size: 30px;
+    color: #333;
+    margin: 15px 0 10px 20px;
+}
+ ul{
+    list-style: none;
+    background: #a3b1c6;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display:block;
+    padding: 20px 25px;
+    color: #333;
+    text-decoration:none ;
+    font-size: 20px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background:  #91a2ba;
+    position: absolute;
+    z-index: 999;
+    display:none ;
+}
+ul li a:hover{
+    background-color:#c0cad8;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+ul li p{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 40rem;
+}
+.post{
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+    background-color: #e0e4eb;
+    border: #91a2ba;
+    padding: 20px;
+
+}
+.post-header{
+    opacity: 0.5;
+    margin: 10px 5px 10px 5px;
+    font-size: 15px;
+}
+.post-content{
+    margin-bottom: 10px;
+    border: 2px solid #91a2ba;
+ font-size: 20px;
+    margin-left: 20px;
+}
+
+.post-actions p{
+    color:red;
+    margin-top: 5px;
+}
+.comments{
+    margin-top: 10px;
+    
+}
+.comment p{
+    margin-bottom: 10px;
+}
+
+.comment-form button{
+    background-color: #c0cad8;
+    border: 2px #e0e4eb solid;
+    /* width: 70px; */
+    color: #fff;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.comment-form button:hover{
+background-color:#627a9d ;
+color: #333;
+}
+.comments button{
+    font-size: 15px;
+    border: none;
+}
+.delete-btn1{
+    color:red;
+}
+.post img{
+    width: 40px;
+    border-radius: 20px;
+    margin: 0;
+}

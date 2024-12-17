@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+ul{
+  list-style: none;
+  background: #a3b1c6;
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  display:block;
+  padding: 20px 25px;
+  color: #333;
+  text-decoration:none ;
+  font-size: 20px;
+}
+ul li ul.dropdown li{
+  display: block;
+}
+ul li ul.dropdown {
+  width: 100%;
+  background:  #91a2ba;
+  position: absolute;
+  z-index: 999;
+  display:none ;
+}
+ul li a:hover{
+  background-color:#c0cad8;
+}
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+ul .crown{
+  margin-left:10rem;
+  margin-right: 10rem;
+  font-size: 24px;
+  color: #fff;
+}
+
+
+button {
+  display: block;
+  background-color: #b1bcce;
+  width: 4rem;
+  font-size: 20px;
+  height: 3rem;
+  border-radius: 4px;
+  border: 2px solid #4f617d;
+  margin-top: 10px;
+  margin-left: 20rem;
+}
+
+.quote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  */
+  margin: 3rem; /* Remove default margin */
+  /* background-color: #f5f5f5;  */
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center content vertically within the quote box */
+  align-items: center; /* Center content horizontally within the quote box */
+  text-align: center; /* Center text inside the paragraph */
+  width: 40rem;
+  border: 2px solid #a3b1c6;
+  border-radius: 6px;
+  height: 20rem;
+  background-color: #b1bcce;
+  margin: 0; /* Remove additional margins */
+}
+
+.quote-text {
+  display: block;
+  margin-bottom: 10px; /* Add some space between text and author */
+}
+
+.quote-author {
+  font-style: italic; /* Optional: Stylize the author text */
+}
+
+

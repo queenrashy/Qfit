@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h1><i class="fa-solid fa-crown"></i>Qfit</h1>
+      </div>
+      <div>
+        <button type="submit" class="btn1">
+          <a href="login.html">Sign in</a>
+        </button>
+        <button type="submit" class="btn2">
+          <a href="sign-up.html">Sign up</a>
+        </button>
+      </div>
+    </nav>
+   <main>
+    <div class="form">
+
+      <form action="../includes/login.php" method="post">
+        <h4>Welcome back!</h4>
+        <p>This Email is registered as a Qfit user, do you want to Login?</p>
+        <input type="email" name="email" id="" placeholder=" Enter-Email">
+        <input type="password" name="pwd" id="" placeholder="Password">
+        <button type="submit" name="login">LOG IN</button>
+        <div class="flex-2">
+            <!-- <a href="/HTML/home.html" class="text1">SKIP LOG IN AND PROCEED AS GUEST</a> -->
+        <!-- <a href="forgot/" class="text2">Forgot Password?</a> -->
+         <a href="forgot_password.php">Forget Password</a>
+      </form>
+
+    </div>
+   </main>
+
+  </body>
+</html>

@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+nav{
+  background-color: #a3b1c6;;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  border: 1px solid #333;
+}
+h1{
+  font-size: 30px;
+  color: #333;
+  margin: 15px 0 10px 20px;
+}
+ nav button{
+  height: 3rem;
+  width: 7rem;
+  margin: 10px 20px 10px 0;
+  border-radius: 40px;
+}
+nav .btn1{
+  background-color: #fff;
+  border: none;
+}
+nav .btn1 a{
+  border: 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav .btn2{
+  background-color:black;
+  border: none;
+  /* transition: 3s; */
+  
+}
+nav .btn2:hover{
+   background-color: #404040; 
+}
+nav .btn2 a{
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  margin-top: 3rem;
+}
+
+form {
+  background: #a3b1c6;
+  padding: 2rem;
+  border-radius: 20px;
+  height: 25rem;
+  width: 27rem;
+}
+form h4{
+  margin-top: 5px;
+  font-size: 25px;
+}
+form  p{
+  margin: 5px;
+  font-size: 20px;
+}
+ input {
+  width: 25rem;
+  height: 30px;
+  /* margin: 2rem 0; */
+  margin-top: 20px;
+  /* margin-bottom: 2rem; */
+  background-color: #e0e5ec;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  /* width: 100%; */
+  width: 26rem;
+  margin-top: 2rem;
+  height: 3rem;
+  padding: 10px;
+  border: none;
+  background-color: #e0e5ec;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cbd3da;
+}
+
+main  button a {
+  text-decoration: none;
+  color: black;
+  
+}
+  main button a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.flex-2 a{
+  display: block;
+  text-align: center;
+}
+.flex-2 .text1{
+  text-decoration: none;
+  color: black;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+.flex-2 .text1:hover{
+  color: #fff;
+  /* font-size: 25px; */
+
+}
+.flex-2 .text2{
+  text-decoration: none;
+  color: black;
+  margin-top: 2rem;
+}
+.flex-2 .text2:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* FORGET CODE */
+
+main .btn3{
+  width: 16rem;
+  height: 3rem;
+  /* margin-left: 20px; */
+}
+main .form2 .link{
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+}
+main .form2 .link1{
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+  
+  @media only screen and (max-width: 600px) {
+    
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    nav h1 {
+      margin-left: 0;
+      font-size: 20px;
+    }
+  
+    nav button {
+      width: 6rem;
+      height: 2.5rem;
+      font-size: 14px;
+    }
+
+    main form {
+      width: 18rem;
+      height: 18rem;
+      margin-top: -20px;
+    }
+    main h4{
+      font-size: 25px;
+      text-align: center;
+
+    }
+    main p{
+      /* font-size: 16px; */
+      text-align: center;
+      margin-top: -1rem;
+    }
+  
+    main input {
+      /* margin-top: -; */
+      width: 20rem;
+      display: block;
+    }
+    main button{
+      width: 21rem;
+      height: 3rem;
+    }
+    main .flex-2 .text1{
+      font-size: 18px;
+    }
+  }
+  
+   @media screen and (min-width: 300px) and (max-width:500px) { 
+  
+    nav h1 {
+      font-size: 18px;
+    }
+  
+    main form{
+      width: 15rem;
+      height: 19rem;
+    }
+  
+    main button {
+      width: 16rem;
+      height: 3rem;
+      font-size: 12px;
+      margin-top: -2px;
+      
+    }
+  
+    main input {
+      height: 25px;
+      width: 15rem;
+    }
+    main h4{
+      font-size: 16px;
+      margin-top: -10px;
+    }
+    main p{
+      font-size: 15px;
+    }
+    main .flex-2 .text1{
+      font-size: 15px;
+    }
+  
+  } 
+ 
+  
